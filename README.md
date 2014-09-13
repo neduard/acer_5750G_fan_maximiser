@@ -18,3 +18,5 @@ Permission to access /dev/ports is required.
 This essentially does the same ioctls as FanController.exe. I first wrote this to test that the order in which ports were written to / read from was correct.
 If using Windows, it is higly recommended you use Acer's original app.
 I have included this file just in case somebody might be interested in what driver and what ioctls FanController.exe uses.
+
+For details about how this project came to be as well as how the values were obtained from FanController.exe and eblib.dll, go to http://neduard.wikidot.com/acer-fancontroller-linux
