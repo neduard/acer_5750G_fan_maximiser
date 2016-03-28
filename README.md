@@ -3,11 +3,19 @@
 
 Max out Acer 5750G Fan Speed.
 
-**WARNING:** this is untested software that, as far as the author is concerned, writes magic values to unknown ports on your laptop. This can easily cause **BRICKING** of your device. Use at your own risk and be sure to read the source code before running! I have only tested this software on my Acer 5750G laptop. Even so, I can not guarantee it will work on your (same model) laptop as well. You have been warned!
+**WARNING:** this is software that, as far as the author is concerned, writes magic values to unknown ports on your laptop. This can easily cause **BRICKING** of your device.
+
+Use at your own risk and be sure to check the laptop model! You may want to inspect the source code also.
+
+I have only tested this software on my Acer 5750G laptop.
+
+Other users reported it working on Acer V3-571G, 5742G and 5741G models.
+
+You have been warned.
+
 
 This repository contains source code that maximises fan speed on the Acer 5750G (and possibly similar models). It writes one of two magic values (0x77 and 0x76) to port 0x68. One value (0x77) makes the fan spin at maximum speed, the other value makes it return to normal (BIOS-operated maybe?) mode.
 
-Other users reported it working on Acer V3-571G, 5742G and 5741G models.
 
 The magic values, port numbers and read/write sequences were obtained by reverse engineering FanController.exe provided by Acer for Windows OEM:
 http://community.acer.com/t5/Notebooks-Netbooks/Fan-Control-Problems-With-5750G-And-similar-machines/m-p/199637/highlight/true#M33756
