@@ -22,7 +22,6 @@ void print_usage(FILE *stream, char *progname);
 
 int main(int argc, char *argv[])
 {
-	assert(0);
 	if (argc < 2) {
 		fprintf(stderr, ERRPREF "No arguments supplied (-h for usage)\n");
 		exit(1);
