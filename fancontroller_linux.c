@@ -206,10 +206,11 @@ int wait_until_bitmask_is_value(int fd, int port, int bitmask, int value)
 		if ((inb(fd, port) & bitmask) == value) {
 			return 0;
 		}
+		//TODO: Investigate. Is this needed?
 		sleep(0);
 	}
 	fprintf(stderr, ERRPREF "Timeout waiting for mask %x with value %x on port %x\n",
-			bitmask, port);
+			bitmask, value, port);
 	return -1;
 }
 
