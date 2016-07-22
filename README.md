@@ -1,5 +1,6 @@
+<!-- Required extensions: mdx_gfm -->
+
 # Acer 5750G Fan Maximiser
-==========================
 
 Max out Acer 5750G (and other models) Fan Speed.
 
@@ -23,6 +24,7 @@ The magic values, port numbers and read/write sequences were obtained by reverse
 http://community.acer.com/t5/Notebooks-Netbooks/Fan-Control-Problems-With-5750G-And-similar-machines/m-p/199637/highlight/true#M33756
 
 Files and description:
+
 * `acer_5750G_fan_controller.pl`: perl script that does the magic.
 Can be invoked with `perl acer_5750G_fan_controller.pl MAX` or `perl acer_5750G_fan_controller.pl NORMAL`.
 Permission to access /dev/ports is required.
@@ -30,5 +32,7 @@ Permission to access /dev/ports is required.
 This essentially does the same ioctls as FanController.exe. I first wrote this to test that the order in which ports were written to / read from was correct.
 If using Windows, it is higly recommended you use Acer's original app.
 I have included this file just in case somebody might be interested in what driver and what ioctls FanController.exe uses.
+* `fancontroller_linux.c`: A C clone that does the same thing.  
+Compile using `$ make` and run with arguments `-m` or `n` for max / normal settings.
 
 For details about how this project came to be as well as how the values were obtained from FanController.exe and eblib.dll, go to http://neduard.wikidot.com/acer-fancontroller-linux.
