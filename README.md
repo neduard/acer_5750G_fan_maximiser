@@ -14,6 +14,8 @@ Other users reported it working on:
 * 5741G
 * 5742G
 * 5755G
+* Samsung NP350V5C
+* Samsung NP350E5C
 
 You have been warned.
 
